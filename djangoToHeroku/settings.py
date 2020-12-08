@@ -28,6 +28,10 @@ SECRET_KEY = '*v4qse^dbtb7k30k*nimz$pt7i_u3ev=jr67)6g795^m4%q(rr'
 DEBUG = True
 
 ALLOWED_HOSTS = [
+    '127.0.0.1',
+    '127.0.0.1:8000',
+    'localhost',
+    'localhost:8000',
     'django-to-heroku.herokuapp.com',
 ]
 
@@ -93,11 +97,14 @@ WSGI_APPLICATION = 'djangoToHeroku.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
+
+        'HOST': 'ec2-99-81-238-134.eu-west-1.compute.amazonaws.com',
         'NAME': 'djiavg5gifplc',
         'USER': 'ofeolwtrknqvji',
-        'PASSWORD': '7de8c80f5c9d7d9a4846b923103f0e9e109b6ec33be0cd7f4e829e8a3a34b9e8',
-        'HOST': 'ec2-99-81-238-134.eu-west-1.compute.amazonaws.com',
         'PORT': '5432',
+        'PASSWORD': '7de8c80f5c9d7d9a4846b923103f0e9e109b6ec33be0cd7f4e829e8a3a34b9e8',
+
+
     }
 }
 
