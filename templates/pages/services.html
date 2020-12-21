@@ -1,0 +1,149 @@
+{% extends 'base.html' %}
+
+{% block title %} | Services   {% endblock %}
+
+{% block content %}
+
+<!-- Sub banner start -->
+<div class="sub-banner overview-bgi">
+    <div class="container breadcrumb-area">
+        <div class="breadcrumb-areas">
+            <h1>Services</h1>
+            <ul class="breadcrumbs">
+                <li><a href="{% url 'home' %}">Home</a></li>
+                <li class="active">Services</li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!-- Sub Banner end -->
+<!-- Services start -->
+<div class="services content-area">
+    <div class="container">
+        <!-- Main title -->
+        <div class="main-title text-center">
+            <h1>Our <span>Services</span></h1>
+            <p>These are services that make your purchase the most profitable.</p>
+        </div>
+        <div class="row">
+            <div class="col-lg-4 col-md-6 col-sm-6">
+                <div class="service-info">
+                    <div class="number">1</div>
+                    <div class="icon">
+                        <i class="flaticon-support-2"></i>
+                    </div>
+                    <div class="detail">
+                        <h3>Free Support</h3>
+                        <p>Every member listed on this page holds Auction Export® Authorized Dealer Certificate. </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-6">
+                <div class="service-info">
+                    <div class="number">2</div>
+                    <div class="icon">
+                        <i class="flaticon-speed"></i>
+                    </div>
+                    <div class="detail">
+                        <h3>Super Fast</h3>
+                        <p>The terms of delivery are included in our contract that guarantee the fast delivery for your purchase.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-6">
+                <div class="service-info">
+                    <div class="number">3</div>
+                    <div class="icon">
+                        <i class="flaticon-motor"></i>
+                    </div>
+                    <div class="detail">
+                        <h3>Repairing</h3>
+                        <p>We provide you a 12-months contract that will assure your car repairing for free by our partners.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-6">
+                <div class="service-info">
+                    <div class="number">4</div>
+                    <div class="icon">
+                        <i class="flaticon-air-conditioner"></i>
+                    </div>
+                    <div class="detail">
+                        <h3>AIR conditioning</h3>
+                        <p>An automotive air conditioning system works a lot like the AC system that you have at home or the office.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-6">
+                <div class="service-info">
+                    <div class="number">5</div>
+                    <div class="icon">
+                        <i class="flaticon-fuel"></i>
+                    </div>
+                    <div class="detail">
+                        <h3>Oil Change</h3>
+                        <p>The basic oil change is a great way to connect with your vehicle and take some control over its maintenance.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-6">
+                <div class="service-info">
+                    <div class="number">7</div>
+                    <div class="icon">
+                        <i class="flaticon-wheel"></i>
+                    </div>
+                    <div class="detail">
+                        <h3>Engine Repair</h3>
+                        <p>Will likely be the most involved portion of the repair and can take anywhere from 3 days to 2 weeks to repair.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-6">
+                <div class="service-info">
+                    <div class="number">6</div>
+                    <div class="icon">
+                        <i class="flaticon-car-2"></i>
+                    </div>
+                    <div class="detail">
+                        <h3>Dealership</h3>
+                        <p>Our logistics department uses the combination of in-land and oceanic transportation to deliver the purchased. </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-6">
+                <div class="service-info">
+                    <div class="number">8</div>
+                    <div class="icon">
+                        <i class="flaticon-lock"></i>
+                    </div>
+                    <div class="detail">
+                        <h3>Security</h3>
+                        <p>Complete ground transportation insurance coverage (ocean shipping insurance extra)</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-6">
+                <div class="service-info">
+                    <div class="number">9</div>
+                    <div class="icon">
+                        <i class="flaticon-deal"></i>
+                    </div>
+                    <div class="detail">
+                        <h3>Trusted Agents</h3>
+                        <p>CARZONE is a corporation established by entrepreneurs with over ten years of experience in the automotive industry.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Services end -->
+    <!-- Full Page Search -->
+    <div id="full-page-search">
+        <button type="button" class="close">×</button>
+        <form action="{% url 'search' %}" class="search-header">
+            <input type="search" value="" placeholder="type keyword(s) here. Eg: audi, benz etc" name= 'keyword' />
+            <button type="submit" class="btn btn-sm button-theme">Search</button>
+        </form>
+    </div>
+{% endblock %}

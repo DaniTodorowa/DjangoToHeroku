@@ -36,6 +36,8 @@ ALLOWED_HOSTS = [
 ]
 
 
+LOGIN_REDIRECT_URL = 'dashboard'
+
 # Application definition
 
 INSTALLED_APPS = [
@@ -45,6 +47,19 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'pages',
+    'cars',
+    'ckeditor',
+    'multiselectfield',
+    'django.contrib.humanize',
+    'accounts',
+    'django.contrib.sites',
+    'allauth',
+    'allauth.account',
+    'allauth.socialaccount',
+    'allauth.socialaccount.providers.facebook',
+    'allauth.socialaccount.providers.google',
+    'contacts',
 ]
 
 MIDDLEWARE = [
@@ -150,3 +165,24 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = [
     join(BASE_DIR / "static"),
 ]
+
+MEDIA_ROOT = join(BASE_DIR, 'media')
+MEDIA_URL = '/media/'
+
+#CKEDITOR_BASEPATH = "/my_static/ckeditor/ckeditor/"
+#messages
+from django.contrib.messages import constants as messages
+MESSAGE_TAGS = {
+    messages.ERROR: 'danger',
+
+}
+
+
+SITE_ID = 1
+
+#email sending
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_PORT = 535
+EMAIL_HOST_USER = 'danitodorova2106@gmail.com'
+EMAIL_HOST_PASSWORD = '111'
+EMAIL_USE_TLS = True
